@@ -16,5 +16,6 @@ namespace Entidades
         public int NroSerie { get; set; }
         public string Id { get; set; }
 
+        
     }
 }

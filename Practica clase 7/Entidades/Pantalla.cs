@@ -12,8 +12,19 @@ namespace Entidades
         //pulgadas (esta información es un número entero pero en algunos casos puede no tener valor)
         public int AnioFabricacion { get; set; }
         public bool Estado { get; set; }
-        public int Pulgadas { get; set; }
+        public int? Pulgadas { get; set; }
 
+        public Pantalla(string modelo, string marca, int nroSerie, string id, int anioFabricacion, int pulgadas)
+        {
+            Modelo = modelo;
+            Marca = marca;
+            NroSerie = nroSerie;
+            Id = id;
+            AnioFabricacion = anioFabricacion;
+            //Estado = determinado por el año;
+            Pulgadas = pulgadas;
+        }
 
+        
     }
 }
